@@ -8,6 +8,7 @@ const Cursos = () => {
       <CardCursos></CardCursos>
       <CardCursos></CardCursos>
       <CardCursos></CardCursos>
+      <CardCursos></CardCursos>
     </section>
   );
 };
