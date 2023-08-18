@@ -1,0 +1,30 @@
+.main__title {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem dotted #ca02f780;
+}
+.fabi__foto {
+  background-color: rgba(202, 2, 247, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 30%;
+  float: left;
+  margin: 1rem;
+}
+.fabi__texto {
+  padding: 1rem;
+  line-height: 20px;
+}
+.fabi__texto-inicial {
+  font-size: 115%;
+  text-align: center;
+  font-weight: bold;
+}
+.fabi__texto-resaltar {
+  color: rgb(202, 2, 247);
+}

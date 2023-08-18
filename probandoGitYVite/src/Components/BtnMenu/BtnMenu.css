@@ -1,0 +1,22 @@
+.btn__menu {
+  display: flex;
+  text-align: center;
+  place-items: center;
+  width: 3rem;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(251, 0, 255, 0.865);
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  line-height: 50px;
+}
+.icon__position {
+  margin: 0 auto;
+}
+.btn__menu:hover {
+  cursor: pointer;
+}

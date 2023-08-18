@@ -1,0 +1,10 @@
+.acerca__title {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem dotted #ca02f780;
+}

@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Header from "./Components/Header/Header";
+import NavBar from "./Components/Nav/NavBar";
+import Main from "./Components/Main/Main";
+import Cursos from "./Components/Cursos/Cursos";
+import BtnMenu from "./Components/BtnMenu/BtnMenu";
+import Footer from "./Components/Footer/Footer";
+import Acerca from "./Components/Acerca/Acerca";
+import Contacto from "./Components/Contacto/Contacto";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [interiorMenu, setInteriorMenu] = useState(false);
+
+  const links = ["Inicio", "Faby Rose", "Cursos", "Contacto"];
+
+  const menuHandler = () => {
+    setInteriorMenu(!interiorMenu);
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header></Header>
+      {interiorMenu ? <NavBar menuHandler={menuHandler}></NavBar> : <></>}
+      <BtnMenu menuHandler={menuHandler}>{interiorMenu ? "𝘅" : "⌂"}</BtnMenu>
+      <Main></Main>
+      <Acerca></Acerca>
+      <Cursos></Cursos>
+      <Contacto></Contacto>
+      <Footer links={links}></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
